@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700italic);
+
+body{
+	/*background: red;*/
+	/*width: 100px;*/
+	font-family: 'Raleway', sans-serif;	
+	}
+
+p{
+	font-size: 13px;
+	font-weight: bold;
+	font-style: italic; 
+	line-height: 20px; /* Tamano del font +7*/
+	text-align: left; /* left /right / justify */
+
+	/*Todo en uno*/
+	font: bold italic 13px/20px 'Raleway' /* short hand */
+	font: normal 13px 'Raleway' /* Solo estos tres atributos o los 5 */
+}
+
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color:blue; /* por el nombre, valor hexadecimal, rgba (10, 12, 10, 0.8) */
+}
+
+#banner{
+	background-color: #fff;
+	background-image: url(../images/indexbanner-bg2.jpg);
+	background-repeat: no-repeat;
+	background-position: 10% center;
+	background-attachment: fixed;
+	background-size: 
+	/*short hand */
+	/*background: blue no-repeat fixed*/
+}
+/*aca comienza el menu*/
+#menu{
+	
+
+}

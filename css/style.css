@@ -1,0 +1,630 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+/* selector universal */
+*{
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	/*
+		margin-top: ;
+		margin-right: ;
+		margin-bottom: ;
+		margin-left: ;
+	*/
+}
+
+img{
+	max-width: 100%;
+}
+/* Resets */
+
+/* agrupación de selectores */
+ul, ol{
+	list-style: none; /* elimina la viñeta */
+	margin: 0;
+	padding: 0;
+	/*
+		padding-top: ;
+		padding-right: ;
+		padding-bottom: ;
+		padding-left: ;
+	*/
+}
+
+figure{
+	margin: 0;
+}
+
+/*
+	tamaños
+		ancho - width:;
+		alto - height:;
+
+	modelo de caja - box model
+		- width
+		- height
+		- padding
+		- border
+			border-style [solid | dashed | dotted | double]
+			border-width
+			border-color
+			border: ;
+		- margin
+*/
+
+.main-header{
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px 0;
+}
+
+.logo{
+	float: left;
+}
+
+.logo figcaption{
+	/*display: none;*/
+}
+
+.main-nav{
+	float: right;
+}
+
+/* selector descendiente */
+.main-nav li{
+	float: left;
+	margin: 5px 0 0 15px;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: #222;
+}
+
+.cleaner{
+	clear: both;
+}
+
+#banner{
+	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
+	background-size: cover;
+}
+
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.banner-title{
+	font-size: 50px;
+	color: #fff;
+	padding-top: 150px;
+	margin: 0;
+}
+
+.banner-text{
+	font-size: 20px;
+	color: #fff;
+}
+
+.register{
+	background-color: #06B4F2;
+	position: relative;
+	top: 30px;
+}
+
+.register input{
+	width: 83%;
+	height: 60px;
+	font-size: 16px;
+	padding: 0 15px;
+	font-family: inherit;
+}
+
+.register button{
+	border: none;
+	background-color: #06B4F2;
+	width: 16%;
+	height: 60px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+.producto{
+	width: 25%;
+	text-align: center;
+	float: left;
+	margin-top: 8%;
+	padding: 0 15px;
+}
+
+.producto h4{
+	text-transform: uppercase;
+}
+
+.title-services{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+.title-services + p{
+	text-align: center;
+	margin: 0 0 100px;
+	font-size: 16px;
+}
+
+.left-services{
+	width: 33.33%;
+	float: left;
+}
+
+.left-services li{
+	position: relative;
+	text-align: right;
+	padding-right: 60px;
+	margin-bottom: 10px;
+}
+
+.left-services img{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.right-services li{
+	position: relative;
+	padding-left: 60px;
+}
+.right-services img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.cellphone{
+	width: 33.33%;
+	text-align: center;
+	float: left;
+	padding: 0 5px;
+}
+
+.right-services{
+	width: 33.33%;
+	float: left;
+}
+
+.pricing-table{
+	background: url(../images/pricing-bg.jpg) center top no-repeat;
+	background-size: contain;
+	margin-top: -100px;
+}
+
+.pricing-table h3{
+	text-align: center;
+	margin: 0;
+	padding: 50px 0 0;
+	font-size: 40px;
+}
+
+.pricing-table h3 + p{
+	text-align: center;
+}
+
+.price-table{
+	background-color: #fff;
+	box-shadow:
+		0 0 10px rgba(0,0,0,0.5)
+		/*-5px -5px 10px rgba(0,0,0,0.5) inset,
+		-5px -5px 10px red,
+		-10px -10px 10px green,
+		-15px -15px 10px orange*/
+		;
+	width: 22.5%;
+	padding: 30px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 3.33%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.price-table h4{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.price-table h2{
+	font-size: 50px;
+	margin: 0;
+}
+
+.price-table h2 sup{
+	font-size: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.price-table p{
+	margin: 0 0 30px;
+}
+
+.price-table table{
+	width: 100%;
+}
+
+.price-table td{
+	padding: 5px;
+}
+
+.price-table a{
+	display: block;
+	background-color: #26ABF6;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.price-table:last-of-type{
+	margin-right: 0;
+}
+
+.price-table:nth-child(4) td:last-child{
+	color: blue;
+}
+
+.price-table:nth-child(5) td:last-child{
+	color: yellow;
+}
+
+.price-table:nth-child(6) td:last-child{
+	color: orange;
+}
+
+.price-table:nth-child(7) td:last-child{
+	color: red;
+}
+
+
+
+.main-footer{
+	background-color: #233042;
+	margin-top: 80px;
+}
+
+.main-footer h3{
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	margin: 0;
+	padding: 60px 0;
+	font-weight: 400;
+}
+
+.main-footer h3 span{
+	color: #26ABF6;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.bg-dark{
+	background-color: #151D27;
+	padding: 30px 0;
+}
+
+.copyright{
+	float: left;
+	margin: 10px 0 0;
+	color: #fff;
+	font-weight: 100;
+}
+
+.footer-nav{
+	float: right;
+	margin-top: 10px;
+}
+
+.footer-nav li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.footer-nav a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 100;
+}
+
+
+/*CONTACTO*/
+#banner-contacto{
+	background: url(../images/indexbanner-bg2.jpg) center top no-repeat;
+	background-size: cover;
+	border: 10px;
+	padding: 100px;
+}
+
+.banner-title-contacto{
+	font-size: 40px;
+	color: #fff;
+	padding-top: 50px;
+	margin: 0;
+}
+
+.banner-text-contacto{
+	font-size: 20px;
+	color: #fff;
+}
+
+
+.title-contact{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+	color: grey;
+	margin-bottom: 20px;
+}
+
+.title-contact-texto{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.ingreso{
+	/*border: dashed red 1px;*/
+	width: 45%;
+	background-color: white;
+	top: 30px;
+	margin-left: 30px;
+	float: left;
+}
+
+.ingreso input{
+	width: 98%;
+	height: 60px;
+	font-size: 16px;
+	font-family: inherit;
+	margin-bottom: 20px;
+}
+
+
+.ingreso-msj{
+	/*border: dashed red 1px;*/
+	width: 45%;
+	background-color: white;
+	float: left;
+}
+
+.ingreso-msj textarea{
+	width: 98%;
+	min-height: 220px;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+
+.boton-enviar-consulta{
+	margin-left: 39.791667%;
+	margin-top: 20px;
+    background-color: #06B4F2;
+    color: white;
+    padding: 1.25% 2.5%;
+    font-size: 16px;
+    border-radius: 8px;
+	width: 16.6666%;
+
+}
+
+
+
+
+
+@media (max-width: 800px) {
+	
+	.container, .main-header {
+		width: 95%;
+	}
+
+	
+	.main-nav {
+	    float: left;
+	    padding-left: 20%;
+	    padding-top: 2%;
+	}
+
+	.producto{
+		width: 50%;
+		margin-top: 80px;
+	}
+
+	.left-services, .cellphone, .right-services{
+		float: none;
+		width: 100%;
+	}
+
+	.left-services li{
+		position: relative;
+		padding-left: 60px;
+		padding-right: 0;
+		margin: 0;
+		text-align: left;
+	}
+
+	.left-services li h3{
+		margin-top: 0;
+	}
+
+
+	.left-services img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+
+	.pricing-table{
+		margin-top: 0;
+	}
+	
+	.price-table{
+		width: 48%;
+	}
+	
+	.price-table:nth-of-type(even){
+		margin-right: 0;
+	}
+
+	.price-table h4{
+		font-size: 15px;
+	}
+
+	.price-table table{
+		font-size: 12px;
+	}	
+
+
+
+	.copyright{
+		float: none;
+		text-align: center;
+	}
+
+
+	.footer-nav{
+		float: none;
+		padding-left: 42%
+
+	}
+
+	.footer-nav li{
+		float: none;
+	}
+
+
+
+
+}
+
+
+
+@media (max-width: 600px){
+
+	.main-header{
+		max-width: 95%;
+		margin: auto;
+		/*padding: 20px 0;*/
+	}
+
+	.logo{
+		float: none;
+		text-align: center;
+	}
+
+	.logo figcaption{
+		display: none;
+	}
+
+	.main-nav{
+		float: none;
+		padding-left: 0%;
+		text-align: center;
+	}
+
+	
+
+	/* selector descendiente */
+	.main-nav li{
+		float: none;
+	}
+
+	#banner{
+		background: none;
+	}
+
+	.banner-title{
+		/*border: dashed red 1px;*/
+		display: none;
+	}
+
+	.banner-text{
+		display: none;
+	}	
+
+	.register{
+		position: static;
+		/*border-style: dashed;*/
+	}
+
+
+	.ingreso{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.ingreso input{
+		width: 95%;
+		margin-left: 0px;
+
+	}
+
+
+	.ingreso-msj{
+		/*border: dashed red 1px;*/
+		width: 100%;
+		background-color: white;
+		float: none;
+	}
+
+	.ingreso-msj textarea{
+		width: 95%;
+
+		/*min-height: 220px;*/
+		/*font-size: 16px;*/
+		/*font-family: inherit;*/
+	}
+
+	#banner-contacto{
+		/*border: dashed red 1px;*/
+		background: none;
+		padding: 0px;
+		height: 0px;
+	}
+
+	.banner-title-contact{
+		padding-top: 0px;
+		display: none;
+	}
+
+	.banner-text-contact{
+		display: none;
+	}
+
+
+	
+
+}
+
+@media (max-width: 430px){
+
+
+.register button{
+	float: right;
+}
+
+
+	.footer-nav{
+		float: none;
+		padding-left: 35%
+
+	}

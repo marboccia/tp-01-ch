@@ -1,0 +1,488 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700italic);
+
+/*Selector Universal*/
+*{
+	/*descuenta del ancho-width y alto-height, lo sumado en relleno-padding y borde-border*/
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;	
+	margin: 0; /*margin-top:
+				margin-right:
+				margin-bottom:
+				margin-left:
+				si hay dos valores : top y bottom - left y right
+				si hay tres: top left right y bottom el tercero*/
+	}
+
+/*Resets*/
+/*Agrupacion de selectores*/
+ul, ol {
+	list-style: none; /*elimina la vineta*/
+	margin: 0; /*es el distanciamiento*/
+	padding: 0; /*es el relleno*/
+
+}
+
+figure{
+	margin:0;
+	}
+
+.main-header{
+	/*width: 1200px;*/
+	max-width: 1200px;
+	margin: auto;
+	padding:  20px 0;
+	
+}
+
+.logo{
+	float: left;
+	/*border: solid 1px green;*/
+}
+
+
+.main-nav {
+	float: right;
+	/*border: solid 1px red;*/
+}
+
+/*selector descendiente*/
+.main-nav li{
+	float: left;
+	margin: 8px 0 0 15px;
+}
+
+.cleaner{
+	clear: both; /*Evita que los elementos se comporten de manera extrana*/
+}
+
+
+#banner{
+	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
+	background-size: cover
+}
+
+.container{
+	/*width: 1200px;*/
+	max-width: 1200px
+	margin: auto;
+	/*border: solid 1px red;*/
+}
+
+.banner-text {
+	font-size: 20px;
+	color: #fff;
+	line-height: 30px;
+	
+}
+
+.banner-title{
+	font-size: 50px;
+	color: #fff;
+	padding-top: 150px;
+	margin: 0;
+}
+
+
+.register{
+		background-color: #06B4F2;
+		position: relative;
+		top: 30px;
+	}
+
+.register input{
+	width: 83%;
+	height: 60px;
+	font-size: 16px;
+	font-family: inherit;
+	}
+
+.register button{
+	border: none;
+	background-color: #06B4F2;
+	width: 15%;
+	height: 60px;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+.producto{
+	/*border: dashed 1px green;*/
+	width: 25%;
+	text-align: center;
+	float: left;
+	margin-top: 100px;
+	font-family: inherit;
+}
+
+.producto h4{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.producto h2{
+	font-size: 60px;
+}
+
+.producto sup{
+	font-size: 22px;
+}
+
+.enc-servicios {
+	padding: 50px;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+#enc-banner{
+	background: url(../images/pricing-bg.jpg) center top no-repeat;
+	background-size: cover;
+	height: 500px;
+	text-align: center;
+}
+
+
+.enc-banner-title{
+	font-size: 50px;
+	padding-top: 150px;
+	margin: 0;
+}
+
+
+.enc-banner-text {
+	font-size: 15px;
+	/*line-height: 20px;*/
+	
+}
+
+
+.servicios-izq{
+	/*border: dashed 1px green;*/
+	width: 33%;
+	text-align: right;
+	float: left;
+	font-family: inherit;
+	position: relative;
+	top: 60px;
+	
+	
+}
+
+.servicios-izq li{
+	position: relative;
+	padding-right: 60px;
+}
+
+.servicios-izq img{
+	position: absolute;
+	right: 0;
+	top: 0;
+
+}
+
+
+.servicios-centro {
+	/*border: dashed 1px green;*/
+	width: 33%;
+	text-align: center;
+	float: left;
+	position: relative;
+	top: 60px;
+}
+
+img {
+	/*Se adapta a su contenedor pero no se agranda mas que su propia definicion*/
+	max-width: 100%;
+}
+
+.servicios-der{
+	/*border: dashed 1px green;*/
+	width: 33%;
+	text-align: left;
+	float: left;
+	font-family: inherit;
+	position: relative;
+	top: 60px;
+
+}
+
+
+.servicios-der li{
+	position: relative;
+	padding-left: 60px;
+}
+
+.servicios-der img{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+}
+
+
+.planes{
+	background-color: white;
+/*	border: dashed 1px green;*/
+	width: 20.83%;
+	text-align: center;
+	float: left;
+	font-family: inherit;
+	position: relative;
+	bottom: 60px;
+	margin-right: 3.33%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px #888888
+}
+
+.planes1{
+	background-color: white;
+	width: 250px;
+	text-align: center;
+	float: left;
+	font-family: inherit;
+	position: relative;
+	
+}
+
+
+.planes h4{
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-top: 30px;
+}	
+
+.planes h2{
+	font-size: 60px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.planes sup{
+	font-size: 22px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+
+}
+
+
+.planes a{
+	border-radius: 20px;
+/*	border: dashed 1px red;*/
+	background-color: #06B4F2;
+	width: 195px;
+	height: 60px;
+	font-family: inherit;
+	font-size: 16px;
+}
+
+.planes p{
+	padding: 0;
+	margin: 0;
+	margin-bottom: 40px;
+
+}
+
+.contenedor-precios{
+	position: relative;	
+	top: -10px;
+	margin-left: 40px;
+}
+
+
+.divisor{
+	color: gray;
+	width: 200px;
+	position: relative;
+	
+}
+
+.banner-footer{
+	background-color: #0B0B3B;
+	background-size: cover;
+	padding-top: 50px;
+	font-family: inherit;
+	
+}
+
+.banner-footer h3{
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 40px;
+	color: white;
+}
+
+.banner-footer span{
+	color: lightblue;
+}
+
+
+.banner-footer-copyright{
+	background-size: cover;
+	height: 50px;
+	background: black;
+
+}
+
+.copyright{
+	background: black;
+	background-size: cover;
+}
+
+.copyright p{
+	float: left;
+	color: white;
+}
+
+
+.main-nav-footer{
+	float: right;
+}
+
+.main-nav-footer li{
+	float: left;
+	margin: 8px 0 0 15px;
+}
+
+.main-nav-footer a{
+	color: white;
+}
+
+.precios-small-package{
+	color: lightblue;
+	font-weight: bold;
+	float: left;
+}
+
+.precios-normal-package{
+	color: yellow;
+	font-weight: bold;
+	float: left;
+}
+
+ .precios-big-package {
+ 	color: orange;
+ 	font-weight: bold;
+ 	float: left;
+ }
+
+ .precios-best-package {
+ 	color: red;
+ 	font-weight: bold;
+ 	float: left;
+ }
+
+ .likeabutton {
+ 	color: white;
+    text-decoration: none;
+    font: inherit;
+    display: inline-block;
+    padding: 20px ;
+    margin-top: 	20px;
+    margin-bottom: 	20px;
+    /*background: ButtonFace;*/
+    /*color: ButtonText;*/
+    border-style: none; 
+    border-width: 2px;
+    /*border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;*/
+}
+
+
+@media (max-width: 800px){
+	.container, .main-header{
+		width: 95%;
+	}
+
+	.producto{
+		width: 50%;
+	}
+
+	.servicios-izq, .servicios-centro, .servicios-der{
+		float: none;
+		max-width: 100%;
+	}
+
+	.contenedor-precios{
+		margin-top: 0;
+	}
+
+	.planes, .planes1{
+		width: 46%;
+		margin-bottom: 50px;
+	}
+
+
+	.planes: nth-child(even) {
+		margin-right: 0;
+	}
+
+	.planes h4{
+		font-size: 15px;
+	}
+
+	.planes1 table {
+		font-size: 12px;
+	}	
+
+
+
+
+	@media (max-width: 600px){
+	.container, .main-header{
+		width: 95%;
+	}
+
+	#banner{
+		display: none;	
+	}
+
+	.logo{
+		float: none;
+		text-align: center;
+	}
+
+	.main-nav{
+		float: none;
+		text-transform: uppercase;	
+	}
+	
+	
+
+
+
+	.producto{
+		width: 50%;
+	}
+
+	.servicios-izq, .servicios-centro, .servicios-der{
+		float: none;
+		max-width: 100%;
+	}
+
+	.contenedor-precios{
+		margin-top: 0;
+	}
+
+	.planes, .planes1{
+		width: 46%;
+		margin-bottom: 50px;
+	}
+
+
+	.planes: nth-child(even) {
+		margin-right: 0;
+	}
+
+	.planes h4{
+		font-size: 15px;
+	}
+
+	.planes1 table {
+		font-size: 12px;
+	}	
